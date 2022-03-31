@@ -5,6 +5,7 @@ use Illuminate\Support\Facades\Route;
 // Controllers
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CategoryController;
+use App\Http\Controllers\BlogController;
 
 /*
 |--------------------------------------------------------------------------
@@ -28,3 +29,9 @@ use App\Http\Controllers\CategoryController;
 Route::get('/', [HomeController::class, '__invoke']);
 
 Route::get('/produtos', [CategoryController::class, 'index']);
+
+Route::get('/produtos/{slug}', [CategoryController::class, 'show']);
+
+Route::get('/blog', [BlogController::class, '__invoke']);
+
+Route::view('sobre', 'site.about.index');
