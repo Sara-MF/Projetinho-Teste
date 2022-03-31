@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 
 // Controllers
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\CategoryController;
 
 /*
 |--------------------------------------------------------------------------
@@ -25,3 +26,5 @@ use App\Http\Controllers\HomeController;
 // });
 
 Route::get('/', [HomeController::class, '__invoke']);
+
+Route::get('/produtos', [CategoryController::class, 'index']);
