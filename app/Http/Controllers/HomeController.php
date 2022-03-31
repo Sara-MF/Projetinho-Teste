@@ -14,6 +14,6 @@ class HomeController extends Controller
      */
     public function __invoke(Request $request)
     {
-        return view('site.home.index');
+        return view('site.home');
     }
 }
