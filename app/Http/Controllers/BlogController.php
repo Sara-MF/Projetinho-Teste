@@ -14,6 +14,6 @@ class BlogController extends Controller
      */
     public function __invoke(Request $request)
     {
-        return view('site.about');
+        return view('site.blog');
     }
 }

@@ -34,4 +34,4 @@ Route::get('/produtos/{slug}', [CategoryController::class, 'show']);
 
 Route::get('/blog', [BlogController::class, '__invoke']);
 
-Route::view('sobre', 'site.about.index');
+Route::view('sobre', 'site.about');
