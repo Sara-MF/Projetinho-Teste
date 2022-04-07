@@ -58,7 +58,7 @@
         <link rel="apple-touch-icon" sizes="512x512" href="../images/Frame.svg">
 
         <!-- Lightbox -->
-        <link rel="stylesheet" type="text/css" href="lightbox/css/lightbox.css"/>
+        <link rel="stylesheet" type="text/css" href="{{ asset('lightbox/css/lightbox.css') }}"/>
 
     </head>
 
