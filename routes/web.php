@@ -30,3 +30,5 @@ Route::view('sobre', 'site.about');
 
 Route::get('/contato', [ContactController::class, 'index']);
 Route::post('/contato', [ContactController::class, 'form']);
+
+Route::get('/teste/commit', [TesteController::class, 'commit']);
